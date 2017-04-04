@@ -6,7 +6,7 @@ describe('Athlete', function(){
   it('should start with hydration at 100',function(){
 
     var athlete = new Athlete();
-    
+
     assert.strictEqual(100,athlete.hydration);
   })
 
@@ -25,4 +25,8 @@ describe('Athlete', function(){
     assert.strictEqual(98, athlete.hydration);
     assert.strictEqual(2,athlete.distanceCovered);
   })
+
+  // it('should not run if too dehydrated to travel that distance',function(){
+    
+  // })
 })
