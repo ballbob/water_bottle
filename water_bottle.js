@@ -6,6 +6,9 @@ var WaterBottle = function(){
   this.drink = function(){
     this.volume = (this.volume-10);
   }
+  this.empty = function(){
+    this.volume = 0;
+  }
 }
 
 module.exports = WaterBottle;
