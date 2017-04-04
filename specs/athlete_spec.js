@@ -26,7 +26,12 @@ describe('Athlete', function(){
     assert.strictEqual(2,athlete.distanceCovered);
   })
 
-  // it('should not run if too dehydrated to travel that distance',function(){
-    
-  // })
+  it('should not run any further if too dehydrated to travel that distance',function(){
+    var athlete = new Athlete();
+    athlete.run(100);
+    athlete.run(10);
+
+    assert.strictEqual(100,athlete.distanceCovered);
+
+  })
 })
