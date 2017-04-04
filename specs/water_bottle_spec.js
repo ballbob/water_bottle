@@ -8,4 +8,10 @@ describe('Water Bottle', function() {
     assert.strictEqual(0,bottle.volume);
   })
 
+  it('should fill when fill function used', function(){
+    var bottle = new WaterBottle();
+    bottle.fill();
+    assert.strictEqual(100,bottle.volume);
+  })
+
 })
