@@ -3,10 +3,12 @@ var WaterBottle = require('../water_bottle.js');
 var Athlete = require('../athlete.js')
 
 describe('Athlete', function(){
+  var bottle;
+  var athlete;
 
   beforeEach(function(){
-    var bottle = new WaterBottle();
-    var athlete = new Athlete();
+    bottle = new WaterBottle();
+    athlete = new Athlete();
   })
 
   it('should start with hydration at 100',function(){
