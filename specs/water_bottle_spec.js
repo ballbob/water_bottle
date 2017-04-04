@@ -28,4 +28,11 @@ describe('Water Bottle', function() {
     assert.strictEqual(0,bottle.volume);
   })
 
+  it('should not go below 0',function(){
+    var bottle = new WaterBottle();
+    bottle.empty();
+    bottle.drink();
+    assert.strictEqual(0,bottle.volume);
+  })
+
 })
