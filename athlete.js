@@ -12,7 +12,13 @@ Athlete.prototype = {
     this.distanceCovered = this.distanceCovered + distance;
     this.hydration = this.hydration - distance;
     }
+  },
+
+  drink: function(bottle){
+    this.hydration = 100;
+    bottle.empty();
   }
+
 }
 
 module.exports = Athlete;

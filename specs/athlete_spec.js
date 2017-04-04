@@ -32,6 +32,18 @@ describe('Athlete', function(){
     athlete.run(10);
 
     assert.strictEqual(100,athlete.distanceCovered);
+  })
+
+  it('should be able to drink the water bottle', function(){
+    
+    var athlete = new Athlete();
+    var bottle = new WaterBottle();
+
+    athlete.run(100);
+    athlete.drink(bottle);
+
+    assert.strictEqual(100,athlete.hydration);
+    assert.strictEqual(0,bottle.volume);
 
   })
 })
